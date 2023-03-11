@@ -24,9 +24,12 @@ Each table has its own set of fields/columns, data types, and relationships with
 # SQL Script
 The SQL script can be used to create the Pharmacy database in a relational database management system such as MySQL Workbench. To use the script:
 
-# Open your RDBMS and create a new database.
-Copy and paste the SQL script into the query editor.
-Run the script to create the tables and establish the relationships between the tables.
-Viewing the ERD Diagram
-To view the ERD diagram, you can open the image file in an image viewer or diagramming tool. Alternatively, you can import the diagram into a software tool that supports ERD modeling, such as StarUML.
+- Open your RDBMS and create a new database.
+- Copy and paste the SQL script into the query editor.
+- Run the script to create the tables and establish the relationships between the tables.
+
+# Viewing the ERD Diagram
+To view the ERD diagram.
+- Open the image file in an image viewer or diagramming tool.
+- Alternatively, you can import the diagram into a software tool that supports ERD modeling, such as StarUML.
 
