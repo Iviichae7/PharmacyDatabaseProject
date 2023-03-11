@@ -1,3 +1,11 @@
+-- Create a new database.
+
+CREATE DATABASE Pharmacy_DB;
+
+-- Select the "pharmacy_db" database for use.
+
+USE Pharmacy_DB;
+
 CREATE TABLE Customer (
   Customer_ID INT NOT NULL,
   Name VARCHAR(45) NOT NULL,
@@ -6,7 +14,6 @@ CREATE TABLE Customer (
   Email VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Customer_ID`))
   );
-
 
 CREATE TABLE Prescription (
   Prescription_ID INT NOT NULL,
@@ -18,3 +25,39 @@ CREATE TABLE Prescription (
   FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID),
   FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID)
 );
+
+-- Create a table called "Purchase"
+
+CREATE TABLE Purchase (
+  Purchase_ID INT PRIMARY KEY NOT NULL,
+  Customer_ID INT NOT NULL,
+  Medication_ID INT NOT NULL,
+  Staff_ID INT NOT NULL,
+  Date_Purchased DATE NOT NULL,
+  Quantity INT NOT NULL,
+  Price DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID),
+  FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID),
+  FOREIGN KEY (Staff_ID) REFERENCES Staff(Staff_ID)
+);
+
+-- Create a table called "Staff".
+
+CREATE TABLE Staff (
+  Staff_ID INT PRIMARY KEY NOT NULL,
+  Name VARCHAR(50) NOT NULL,
+  Job_Title VARCHAR(50),
+  Email VARCHAR(100) NOT NULL
+);
+
+-- Create a table called "Activity_Log".
+
+CREATE TABLE Activity_Log (
+  Transaction_ID INT PRIMARY KEY NOT NULL,
+  User_ID INT NOT NULL,
+  Date_Time DATETIME NOT NULL,
+  Action VARCHAR(50) NOT NULL,
+  FOREIGN KEY (User_ID) REFERENCES Staff(Staff_ID)
+);
+
+-- ************************************************************************ --
