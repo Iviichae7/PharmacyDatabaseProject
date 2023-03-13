@@ -60,4 +60,26 @@ CREATE TABLE Activity_Log (
   FOREIGN KEY (User_ID) REFERENCES Staff(Staff_ID)
 );
 
+--Create a table called "Medication".
+
+CREATE TABLE Medication (
+  Medication_ID INT NOT NULL, 
+  Name VARCHAR(25) NOT NULL,
+  Description VARCHAR(100) NOT NULL,
+  Exp_date DATE NOT NULL, 
+  Supplier_ID INT NOT NULL,
+  FOREIGN KEY (Supplier_ID) REFERENCES Supplier(Supplier_ID)
+);
+
+--Create a table called "Supplier".
+
+CREATE TABLE Supplier (
+  Supplier_ID INT NOT NULL,
+  Company_name VARCHAR(50) NOT NULL,
+  Address VARCHAR(100) NOT NULL,
+  Contact_number VARCHAR(20) NOT NULL,
+  Email VARCHAR(50) NOT NULL,
+  Location VARCHAR(50) NOT NULL, 
+);
+
 -- ************************************************************************ --
