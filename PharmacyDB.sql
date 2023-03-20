@@ -1,65 +1,59 @@
--- Create a new database.
 CREATE DATABASE Pharmacy_DB;
 
--- Select the "pharmacy_db" database for use.
 USE Pharmacy_DB;
 
--- Create a table called "Supplier".
+-- Create a table "Supplier".
 CREATE TABLE Supplier (
-  Supplier_ID INT NOT NULL,
+  Supplier_ID INT AUTO_INCREMENT PRIMARY KEY,
   Company_name VARCHAR(50) NOT NULL,
   Address VARCHAR(100) NOT NULL,
   Contact_number VARCHAR(20) NOT NULL,
   Email VARCHAR(50) NOT NULL,
-  Location VARCHAR(50) NOT NULL,
-  PRIMARY KEY (Supplier_ID)
+  Location VARCHAR(50) NOT NULL
 );
 
--- Create a table called "Medication".
+-- Create a table "Medication".
 CREATE TABLE Medication (
-  Medication_ID INT NOT NULL, 
+  Medication_ID INT AUTO_INCREMENT PRIMARY KEY, 
   Name VARCHAR(25) NOT NULL,
   Description VARCHAR(100) NOT NULL,
   Expiration_date DATE NOT NULL, 
   Supplier_ID INT NOT NULL,
-  FOREIGN KEY (Supplier_ID) REFERENCES Supplier(Supplier_ID),
-  PRIMARY KEY (Medication_ID)
+  FOREIGN KEY (Supplier_ID) REFERENCES Supplier(Supplier_ID)
 );
 
--- Create a table called "Customer".
+-- Create a table "Customer".
 CREATE TABLE Customer (
-  Customer_ID INT NOT NULL,
+  Customer_ID INT AUTO_INCREMENT PRIMARY KEY,
   Name VARCHAR(45) NOT NULL,
   Address VARCHAR(45) NOT NULL,
   Phone_number VARCHAR(45) NOT NULL,
-  Email VARCHAR(45) NOT NULL,
-  PRIMARY KEY (Customer_ID)
+  Email VARCHAR(45) NOT NULL
 );
 
--- Create a table called "Staff".
+-- Create a table "Staff".
 CREATE TABLE Staff (
-  Staff_ID INT PRIMARY KEY NOT NULL,
+  Staff_ID INT AUTO_INCREMENT PRIMARY KEY,
   Name VARCHAR(50) NOT NULL,
   Job_Title VARCHAR(50),
   Email VARCHAR(100) NOT NULL
 );
 
--- Create a table called "Prescription".
+-- Create a table "Prescription".
 CREATE TABLE Prescription (
-  Prescription_ID INT NOT NULL,
+  Prescription_ID INT AUTO_INCREMENT PRIMARY KEY,
   Medication_name VARCHAR(45) NOT NULL,
   Issued_Doctor VARCHAR(45) NOT NULL,
   Issued_Date DATE NOT NULL,
   Customer_ID INT NOT NULL,
   Medication_ID INT NOT NULL,
   FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID),
-  FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID),
-  PRIMARY KEY (Prescription_ID)
+  FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID)
 );
 
--- Create a table called "Purchase".
+-- Create a table "Purchase".
 CREATE TABLE Purchase (
-  Purchase_ID INT PRIMARY KEY NOT NULL,
+  Purchase_ID INT AUTO_INCREMENT PRIMARY KEY,
   Customer_ID INT NOT NULL,
   Medication_ID INT NOT NULL,
   Staff_ID INT NOT NULL,
@@ -71,11 +65,12 @@ CREATE TABLE Purchase (
   FOREIGN KEY (Staff_ID) REFERENCES Staff(Staff_ID)
 );
 
--- Create a table called "Activity_Log".
+-- Create a table "Activity_Log".
 CREATE TABLE Activity_Log (
-  Transaction_ID INT PRIMARY KEY NOT NULL,
+  Transaction_ID INT AUTO_INCREMENT PRIMARY KEY,
   User_ID INT NOT NULL,
   Date_Time DATETIME NOT NULL,
   Action VARCHAR(50) NOT NULL,
   FOREIGN KEY (User_ID) REFERENCES Staff(Staff_ID)
 );
+
