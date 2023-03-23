@@ -3,11 +3,11 @@
 
 ### Overview
 
-###### This report outlines the design, implementation, and administration of a comprehensive pharmacy database management system, aimed at effectively managing data related to suppliers, medications, customers, staff, prescriptions, purchases, and activity logs. The development environment used for this project is MySQL Workbench. The system is equipped with advanced SQL programming to provide value-added reporting and insights. The project was developed and maintained using GitHub for version control and collaboration among team members.
+###### This report outlines the design, implementation, and administration of a comprehensive pharmacy database management system, aimed at effectively managing data related to suppliers, medications, customers, staff, prescriptions, purchases, and activity logs. The development environment used for this project is MySQL Workbench. The system is equipped with advanced SQL programming to provide value-added reporting and insights. The project was developed and maintained using GitHub for version control and collaboration among team members. 
 
 ### Introduction
 
-###### A well-structured pharmacy database management system is crucial for effective data organization and management in a pharmacy setting. The database design ensures optimal storage and retrieval of information while adhering to best practices in the industry. This project aims to provide a comprehensive data management solution capable of addressing the organization's current and future needs.
+###### In the fast-paced and highly regulated pharmaceutical industry, effective data management is essential for maintaining accuracy, compliance, and profitability. A pharmacy database management system is an invaluable tool for pharmacists, enabling them to track inventory, sales, and customer records with ease. By leveraging the latest technologies and best practices in database design, a well-structured pharmacy database management system can streamline workflows, reduce errors, and improve patient care. The aim of this project is to create a robust, scalable, and user-friendly pharmacy database management system that can meet the diverse needs of pharmacists and pharmacy owners. Whether it's tracking prescription orders, storing customer records, or allowing access to supplier information, this system will provide a comprehensive solution to optimize operations and drive success. 
 
 ### ERD Diagram Development Process
 
@@ -52,27 +52,30 @@ To use the database, users must have access to MySQL Workbench or a compatible d
 Collaboration and Version Control
 Our team utilized GitHub for version control and collaboration throughout the project's development. Each team member committed their work to a shared repository, allowing for seamless collaboration and tracking of changes made to the database and associated files. This approach ensured that the project maintained a consistent history of modifications and provided a platform for addressing any potential issues efficiently.
 
-Team Member Contributions
-Cian O'Connor:
+### Team Member Contributions
+##### Cian O'Connor:
 
-Physical Implementation of Staff, Activity_Log table and Purchase tables
-Report writing
-Queries 1-4
+###### High-level Model creation 
+###### Physical Implementation of Staff, Activity_Log table and Purchase tables
+###### Report writing
+###### Queries 1-4
 
-Michal Babik:
+###### Michal Babik:
 
-High-Level Model creation
-ERD diagram creation 
-Physical Implementation of Supplier and Medication 
-Queries 5-8
+###### High-Level Model creation
+###### ERD diagram creation 
+###### Physical Implementation of Supplier and Medication 
+###### Queries 5-8
 
-John Ward:
+###### John Ward:
 
-proposal writing
-Physical Implementation of Prescription table and Customer tables
-Queries 9-12
+###### ERD diagram creation
+###### proposal writing
+###### Physical Implementation of Prescription table and Customer tables
+###### Queries 9-12
 
+### Conclusion
 
-Conclusion
+###### From the beginning, the team worked together to determine the objectives of this project, determine project scope, and set a timelines for completion. Each member of the team brought their own vision and skillset to the project, which allowed for a comprehensive and well-rounded approach to database development. As this was a first for us, each member was willing to accept ideas and work together with ease. Collaboration was key during the design and development phase, as the team members worked together to identify user requirements, design the database schema. Regular communication and feedback loops were established throughout the project to ensure that all team members were aligned and working towards the same objectives. Some of the main tools of communication included Github, Microsoft Teams and Whatsapp. Through effective collaboration, the team was able to successfully complete the project on time and to a high standard, resulting in a robust and user-friendly pharmacy database management system.
 
-The team successfully designed and implemented an advanced pharmacy database management system using MySQL Workbench. The system effectively addresses data management issues and provides valuable insights through complex SQL queries. The project has deepened our understanding of high-level modeling, physical design, and SQL programming, equipping us for roles as DBMS professionals.
+###### In conclusion, the pharmacy database management system developed for this project offers a powerful solution to the data management challenges facing pharmacists and pharmacy owners today. By providing a centralized and streamlined system for tracking inventory, sales, and customer records, this database can help pharmacies save time, reduce errors, and improve patient care. The system is designed with best practices in database design and is capable of meeting the complex needs of the pharmaceutical industry. Our aim was to give pharmacists a system  which provides a comprehensive data management solution that can help pharmacies optimize operations and achieve their business goals. We are confident that this database will make a significant impact on the work life of its users, and we look forward to seeing its benefits in action.
