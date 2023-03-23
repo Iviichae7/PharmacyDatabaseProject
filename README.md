@@ -52,8 +52,6 @@ To use the database, users must have access to MySQL Workbench or a compatible d
 Collaboration and Version Control
 Our team utilized GitHub for version control and collaboration throughout the project's development. Each team member committed their work to a shared repository, allowing for seamless collaboration and tracking of changes made to the database and associated files. This approach ensured that the project maintained a consistent history of modifications and provided a platform for addressing any potential issues efficiently.
 
-##### The team working on the pharmacy database project for college has made significant contributions in various areas. Cian O'Connor has been instrumental in creating high-level models and implementing the supplier and medication modules. Additionally, he has taken on the shared responsibility of writing half the report and addressing queries 1-4. Michal Babik has been actively involved in creating high-level models and creating an ERD diagram. He has also played a crucial role in the physical implementation of staff, activity log table, and purchase tables. Michal took the other half of the report writing. Furthermore, he has taken on the responsibility of addressing queries 5-8. John Ward has made valuable contributions in creating an ERD diagram, writing proposals, and implementing the prescription and customer tables. He has also taken on the responsibility of addressing queries 9-12. The team's combined efforts have resulted in a well-organized and efficient pharmacy database that meets the project requirements.
-
 ### Team Member Contributions
 ##### Cian O'Connor:
 
@@ -76,6 +74,8 @@ Our team utilized GitHub for version control and collaboration throughout the pr
 ###### proposal writing
 ###### Physical Implementation of Prescription table and Customer tables
 ###### Queries 9-12
+
+### The team working on the pharmacy database project for college has made significant contributions in various areas. Cian O'Connor has been instrumental in creating high-level models and implementing the supplier and medication modules. Additionally, he has taken on the shared responsibility of writing half the report and addressing queries 1-4. Michal Babik has been actively involved in creating high-level models and creating an ERD diagram. He has also played a crucial role in the physical implementation of staff, activity log table, and purchase tables. Michal took the other half of the report writing. Furthermore, he has taken on the responsibility of addressing queries 5-8. John Ward has made valuable contributions in creating an ERD diagram, writing proposals, and implementing the prescription and customer tables. He has also taken on the responsibility of addressing queries 9-12. The team's combined efforts have resulted in a well-organized and efficient pharmacy database that meets the project requirements.
 
 ### Conclusion
 
