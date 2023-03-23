@@ -56,7 +56,7 @@ Our team utilized GitHub for version control and collaboration throughout the pr
 ##### Cian O'Connor:
 
 ###### High-level Model creation 
-###### Physical Implementation of Staff, Activity_Log table and Purchase tables
+###### Physical Implementation of Supplier and Medication 
 ###### Report writing
 ###### Queries 1-4
 
@@ -64,7 +64,7 @@ Our team utilized GitHub for version control and collaboration throughout the pr
 
 ###### High-Level Model creation
 ###### ERD diagram creation 
-###### Physical Implementation of Supplier and Medication 
+###### Physical Implementation of Staff, Activity_Log table and Purchase tables 
 ###### Queries 5-8
 
 ###### John Ward:
