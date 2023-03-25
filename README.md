@@ -110,7 +110,9 @@ WHERE p.Date_Purchased = '2023-03-15';
 
 ###### To download all the project files as a ZIP archive, click on the link below:
 
-- <a href="https://raw.githubusercontent.com/Iviichae7/PharmacyDatabaseProject/main/dbp.queries.sql" download="dbp.queries.sql">Click here to view the dbp.queries.sql file</a>
+- [Download Project Files](https://github.com/Iviichae7/PharmacyDatabaseProject/archive/refs/heads/main.zip)
+
+
 
 ###### After downloading the ZIP file, extract its contents to a folder on your computer. You will find all the necessary SQL scripts and other project files within the extracted folder.
 
