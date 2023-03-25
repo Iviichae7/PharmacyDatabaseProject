@@ -41,14 +41,13 @@ CREATE TABLE Staff (
 
 -- Create a table "Prescription".
 CREATE TABLE Prescription (
-  Prescription_ID INT AUTO_INCREMENT PRIMARY KEY,
-  Medication_name VARCHAR(45) NOT NULL,
-  Issued_Doctor VARCHAR(45) NOT NULL,
-  Issued_Date DATE NOT NULL,
-  Customer_ID INT NOT NULL,
-  Medication_ID INT NOT NULL,
-  FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID),
-  FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID)
+    Prescription_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Medication_ID INT,
+    Issued_Doctor VARCHAR(255),
+    Issued_Date DATE,
+    Customer_ID INT,
+    FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID),
+    FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID)
 );
 
 -- Create a table "Purchase".
@@ -73,4 +72,3 @@ CREATE TABLE Activity_Log (
   Action VARCHAR(50) NOT NULL,
   FOREIGN KEY (User_ID) REFERENCES Staff(Staff_ID)
 );
-
