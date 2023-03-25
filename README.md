@@ -7,6 +7,8 @@
 
 ###### Throughout the project's development, our team utilized GitHub for version control and collaboration. Each team member committed their work to a shared repository, allowing for seamless collaboration and tracking of changes made to the database and associated files. This approach ensured that the project maintained a consistent history of modifications, offering a platform for addressing potential issues efficiently. By combining a well-structured database design with effective collaboration, our team has delivered a pharmacy database management system that meets the organization's current and future needs.
 
+###### To access the GitHub repository for this project, please click the following link: <a href="https://github.com/Iviichae7/PharmacyDatabaseProject" target="_blank">Project Repository</a>
+
 ### 1. Introduction
 
 ###### In the fast-paced and highly regulated pharmaceutical industry, effective data management is essential for maintaining accuracy, compliance, and profitability. A pharmacy database management system is an invaluable tool for pharmacists, enabling them to track inventory, sales, and customer records with ease. By leveraging the latest technologies and best practices in database design, a well-structured pharmacy database management system can streamline workflows, reduce errors, and improve patient care. The aim of this project is to create a robust, scalable, and user-friendly pharmacy database management system that can meet the diverse needs of pharmacists and pharmacy owners. Whether it's tracking prescription orders, storing customer records, or allowing access to supplier information, this system will provide a comprehensive solution to optimize operations and drive success. 
