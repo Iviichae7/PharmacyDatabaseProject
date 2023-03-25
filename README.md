@@ -102,7 +102,7 @@ WHERE p.Date_Purchased = '2023-03-15';
 
 ###### The remaining queries source, along with descriptions of their purpose, can be accessed via the link below:
 
-- <a href="(https://github.com/Iviichae7/PharmacyDatabaseProject/blob/main/dbp.queries.sql)" download="dbp.quries.sql">Click here to view the dbp.queries.sql file</a>
+- <a href="https://raw.githubusercontent.com/Iviichae7/PharmacyDatabaseProject/main/dbp.queries.sql" download="dbp.queries.sql">Click here to view the dbp.queries.sql file</a>
 
 ###### By carefully planning and collaborating on the development of these queries, our team was able to create a comprehensive set of tools for extracting valuable information from the pharmacy database.
 
