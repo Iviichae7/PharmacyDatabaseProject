@@ -13,6 +13,10 @@
 
 ###### In the fast-paced and highly regulated pharmaceutical industry, effective data management is essential for maintaining accuracy, compliance, and profitability. A pharmacy database management system is an invaluable tool for pharmacists, enabling them to track inventory, sales, and customer records with ease. By leveraging the latest technologies and best practices in database design, a well-structured pharmacy database management system can streamline workflows, reduce errors, and improve patient care. The aim of this project is to create a robust, scalable, and user-friendly pharmacy database management system that can meet the diverse needs of pharmacists and pharmacy owners. Whether it's tracking prescription orders, storing customer records, or allowing access to supplier information, this system will provide a comprehensive solution to optimize operations and drive success. 
 
+### Proposal 
+
+###### We identified the key features that a pharmacy database should have effective inventory management, user friendly interaction and enhanced customer care. We also brainstormed various queries that would enhance the functionality of the database, allowing pharmacists to manage stock, prescriptions, and customer details. Through effective communication and collaboration, we were able to pool our knowledge and ideas to come up with a comprehensive proposal that meets the requirements of the college project. The process was challenging, but also rewarding, as we developed our skills in teamwork, research, and critical thinking.
+
 ##### ERD Diagram Development Process
 
 ###### The development of the ERD diagram for our pharmacy database management system involved a collaborative approach to ensure a simple yet effective design.
