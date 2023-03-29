@@ -66,7 +66,6 @@ VALUES ('ABC Pharmaceuticals', '123 Main St, Anytown USA', '555-1234', 'abcpharm
 ('AbbVie Inc.', '1 N Waukegan Rd, North Chicago, IL', '1-800-255-5162', 'abbvie@gmail.com', 'USA'),
 ('Bristol-Myers Squibb Company', '430 E 29th St, New York, NY', '1-800-332-2056', 'bms@gmail.com', 'USA'),
 ('Eli Lilly and Company', '893 South Delaware Street, Indianapolis, IN', '1-317-276-2000', 'lilly@gmail.com', 'USA');
-
 ('Abbott Laboratories', '100 Abbott Park Rd, Abbott Park, IL', '1-800-255-5162', 'abbott@gmail.com', 'USA'),
 ('Allergan plc', 'Clonshaugh Business and Technology Park, Dublin, Ireland', '+353 1 291 2000', 'allergan@gmail.com', 'Ireland'),
 ('Boehringer Ingelheim GmbH', 'Binger Str. 173, 55216 Ingelheim am Rhein, Germany', '+49 6132 77 0', 'boehringer@gmail.com', 'Germany'),
@@ -111,7 +110,6 @@ VALUES
 ('Tramadol', 'Pain relief medication', '2025-07-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'AbbVie Inc.')),
 ('Sertraline', 'Antidepressant medication','2025-08-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Bristol-Myers Squibb Company')),
 ('Alprazolam', 'Antianxiety medication', '2025-09-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Eli Lilly and Company'));
-
 ('Metoprolol', 'Beta-blocker medication', '2025-10-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Abbott Laboratories'))
 ('Diazepam', 'Antianxiety medication', '2025-11-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Allergan plc'))
 ('Cephalexin', 'Antibiotic medication', '2025-12-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Boehringer Ingelheim GmbH'))
