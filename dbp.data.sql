@@ -23,6 +23,26 @@ VALUES
 ('Paul Walker', '4041 Sycamore St', '555-9515', 'paul.walker@gmail.com'),
 ('Jennifer Hall', '4243 Maple St', '555-7537', 'jennifer.hall@gmail.com'),
 ('Andrew Adams', '4445 Elm St', '555-9518', 'andrew.adams@gmail.com');
+('Robert Johnson', '4646 Poplar St', '555-6820', 'robert.johnson@gmail.com'),
+('Emily Baker', '4848 Cedar St', '555-7690', 'emily.baker@gmail.com'),
+('Christopher Turner', '5050 Walnut St', '555-4870', 'christopher.turner@gmail.com'),
+('Jessica Rodriguez', '5252 Willow St', '555-9400', 'jessica.rodriguez@gmail.com'),
+('Matthew Ramirez', '5454 Maple St', '555-7520', 'matthew.ramirez@gmail.com'),
+('Ashley Campbell', '5656 Birch St', '555-3460', 'ashley.campbell@gmail.com'),
+('Joshua Collins', '5858 Pine St', '555-9410', 'joshua.collins@gmail.com'),
+('Amanda Anderson', '6060 Cedar St', '555-5400', 'amanda.anderson@gmail.com'),
+('Tyler Perez', '6262 Walnut St', '555-7540', 'tyler.perez@gmail.com'),
+('Rachel Barnes', '6464 Willow St', '555-9420', 'rachel.barnes@gmail.com'),
+('David Hernandez', '6666 Maple St', '555-7560', 'david.hernandez@gmail.com'),
+('Megan Foster', '6868 Birch St', '555-9440', 'megan.foster@gmail.com'),
+('Daniel Jackson', '7070 Pine St', '555-7580', 'daniel.jackson@gmail.com'),
+('Lauren Coleman', '7272 Cedar St', '555-9460', 'lauren.coleman@gmail.com'),
+('Brandon Ortiz', '7474 Walnut St', '555-7600', 'brandon.ortiz@gmail.com'),
+('Olivia Cooper', '7676 Willow St', '555-9480', 'olivia.cooper@gmail.com'),
+('Ryan Flores', '7878 Maple St', '555-7620', 'ryan.flores@gmail.com'),
+('Isabella Collins', '8080 Birch St', '555-9500', 'isabella.collins@gmail.com'),
+('Nicholas Ramirez', '8282 Pine St', '555-7640', 'nicholas.ramirez@gmail.com'),
+('Sophia Campbell', '8484 Cedar St', '555-9520', 'sophia.campbell@gmail.com');
 
 INSERT INTO Supplier (Company_name, Address, Contact_number, Email, Location)
 VALUES ('ABC Pharmaceuticals', '123 Main St, Anytown USA', '555-1234', 'abcpharm@gmail.com', 'USA'),
@@ -47,6 +67,27 @@ VALUES ('ABC Pharmaceuticals', '123 Main St, Anytown USA', '555-1234', 'abcpharm
 ('Bristol-Myers Squibb Company', '430 E 29th St, New York, NY', '1-800-332-2056', 'bms@gmail.com', 'USA'),
 ('Eli Lilly and Company', '893 South Delaware Street, Indianapolis, IN', '1-317-276-2000', 'lilly@gmail.com', 'USA');
 
+('Abbott Laboratories', '100 Abbott Park Rd, Abbott Park, IL', '1-800-255-5162', 'abbott@gmail.com', 'USA'),
+('Allergan plc', 'Clonshaugh Business and Technology Park, Dublin, Ireland', '+353 1 291 2000', 'allergan@gmail.com', 'Ireland'),
+('Boehringer Ingelheim GmbH', 'Binger Str. 173, 55216 Ingelheim am Rhein, Germany', '+49 6132 77 0', 'boehringer@gmail.com', 'Germany'),
+('Celgene Corporation', '86 Morris Avenue, Summit, NJ', '1-888-771-0141', 'celgene@gmail.com', 'USA'),
+('Genentech, Inc.', '1 DNA Way, South San Francisco, CA', '1-800-551-2231', 'genentech@gmail.com', 'USA'),
+('Gilead Sciences, Inc.', '333 Lakeside Drive, Foster City, CA', '1-800-445-3235', 'gilead@gmail.com', 'USA'),
+('Janssen Pharmaceutical Companies of Johnson & Johnson', '1125 Trenton-Harbourton Rd, Titusville, NJ', '1-800-526-7736', 'janssen@gmail.com', 'USA'),
+('Mallinckrodt Pharmaceuticals', '1425 U.S. 206, Bedminster, NJ', '1-800-778-7898', 'mallinckrodt@gmail.com', 'USA'),
+('Mylan N.V.', 'Building 4, Trident Place, Mosquito Way, Hatfield, UK', '+44 800 121 8267', 'mylan@gmail.com', 'UK'),
+('Nippon Shinyaku Co. Ltd.', '14-1 Nishiazabu 2-chome, Minato-ku, Tokyo, Japan', '+81-3-3499-1101', 'nipponshinyaku@gmail.com', 'Japan'),
+('Olympus Corporation', '2951 Ishikawa-cho, Hachioji-shi, Tokyo, Japan', '+81-42-665-8111', 'olympus@gmail.com', 'Japan'),
+('Ono Pharmaceutical Co. Ltd.', '3-1-1 Sakurai, Shimamoto-cho, Mishima-gun, Osaka, Japan', '+81-6-6203-7888', 'ono@gmail.com', 'Japan'),
+('Purdue Pharma L.P.', 'One Stamford Forum, Stamford, CT', '1-203-588-8000', 'purduepharma@gmail.com', 'USA'),
+('Santen Pharmaceutical Co. Ltd.', '2-1-6 Nihonbashi-Honcho, Chuo-ku, Tokyo, Japan', '+81-3-3270-1551', 'santen@gmail.com', 'Japan'),
+('Sumitomo Dainippon Pharma Co. Ltd.', '6-8, Doshomachi 2-chome, Chuo-ku, Osaka, Japan', '+81-6-6203-1407', 'sumitomodainippon@gmail.com', 'Japan'),
+('Sun Pharmaceutical Industries Ltd.', 'Acme Plaza, Andheri-Kurla Road, Andheri (East), Mumbai, India', '+91-22-4324-4324', 'sunpharma@gmail.com', 'India'),
+('Teva Pharmaceuticals', '1090 Horsham Rd, North Wales, PA', '+1 888-838-2872', 'teva@gmail.com', 'USA'),
+('Mylan N.V.', 'Building D31, Westpark 26, 5340 AB Oss, Netherlands', '+31 412 66 72 00', 'mylan@gmail.com', 'Netherlands'),
+('Sandoz International GmbH', 'Biochemiestrasse 10, 6250 Kundl, Austria', '+43 5338 2000 0', 'sandoz@gmail.com', 'Austria'),
+('Sun Pharmaceutical Industries Ltd.', 'Acme Plaza, Andheri-Kurla Rd, Andheri East, Mumbai, India', '+91 22 4324 4324', 'sunpharma@gmail.com', 'India'),
+
 INSERT INTO Medication (Name, Description, Expiration_date, Supplier_ID)
 VALUES 
 ('Ibuprofen', 'Pain relief medication', '2024-01-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'ABC Pharmaceuticals')),
@@ -70,6 +111,26 @@ VALUES
 ('Tramadol', 'Pain relief medication', '2025-07-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'AbbVie Inc.')),
 ('Sertraline', 'Antidepressant medication','2025-08-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Bristol-Myers Squibb Company')),
 ('Alprazolam', 'Antianxiety medication', '2025-09-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Eli Lilly and Company'));
+
+('Metoprolol', 'Beta-blocker medication', '2025-10-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Abbott Laboratories'))
+('Diazepam', 'Antianxiety medication', '2025-11-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Allergan plc'))
+('Cephalexin', 'Antibiotic medication', '2025-12-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Boehringer Ingelheim GmbH'))
+('Codeine', 'Pain relief medication', '2026-01-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Celgene Corporation'))
+('Loratadine', 'Antihistamine medication', '2026-02-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Genentech, Inc.'))
+('Acetaminophen', 'Pain relief medication', '2026-03-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Gilead Sciences, Inc.'))
+('Amphetamine', 'Stimulant medication', '2026-04-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Janssen Pharmaceutical Companies of Johnson & Johnson'))
+('Levofloxacin', 'Antibiotic medication', '2026-05-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Mallinckrodt Pharmaceuticals'))
+('Tamsulosin', 'Prostate medication', '2026-06-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Mylan N.V.'))
+('Pregabalin', 'Anticonvulsant and nerve pain medication', '2026-07-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Nippon Shinyaku Co. Ltd.'))
+('Bupropion', 'Antidepressant medication', '2026-08-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Olympus Corporation'))
+('Fexofenadine', 'Antihistamine medication', '2026-09-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Ono Pharmaceutical Co. Ltd.'))
+('Ciprofloxacin', 'Antibiotic medication', '2026-10-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Purdue Pharma L.P.'))
+('Rosuvastatin', 'Cholesterol medication', '2026-11-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Santen Pharmaceutical Co. Ltd.'))
+('Metronidazole', 'Antibiotic medication', '2026-12-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Sumitomo Dainippon Pharma Co. Ltd.'))
+('Desvenlafaxine', 'Antidepressant medication', '2027-01-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Teva Pharmaceuticals'))
+('Trazodone', 'Antidepressant medication', '2027-02-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Mylan N.V.'))
+('Mirtazapine', 'Antidepressant medication', '2027-03-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Sandoz International GmbH'))
+('Escitalopram', 'Antidepressant medication', '2027-11-01', (SELECT Supplier_ID FROM Supplier WHERE Company_name = 'Sun Pharmaceutical Industries Ltd.'))
 
 
 INSERT INTO Staff (Name, Job_Title, Email)
