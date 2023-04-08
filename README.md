@@ -72,7 +72,7 @@ Addition:
 
 ###### However, when executing the data population script, we encountered various issues with the INSERT statements, such as misaligned foreign key constraints, primary key errors, and NOT NULL value errors. These challenges were compounded by the fact that each team member had their own style of inserting data, leading to inconsistencies.
 
-###### To resolve these issues, we reduced the number of entries per table to 20 and focused on refining the INSERT statements. In hindsight, assigning the data population task to a single team member would have been more efficient, as it would have ensured a consistent approach throughout the process.
+###### To resolve these issues, we reduced the number of entries per table to 20 and then adjusted to 50 and focused on refining the INSERT statements. In hindsight, assigning the data population task to a single team member would have been more efficient, as it would have ensured a consistent approach throughout the process.
 
 ###### With the revised data population script, we successfully populated the tables, eliminating errors related to foreign key constraints, primary keys, and NOT NULL values. This experience highlighted the importance of clear communication and consistent formatting when working on a collaborative project.
 
@@ -82,27 +82,27 @@ Addition:
 
 ##### Queries
 
-###### Our team developed a total of 12 complex queries using WHERE, GROUP BY, and JOIN clauses as outlined in the project description. Each team member contributed four queries, providing valuable insights and information for the organization's current and future needs.
+###### Our team developed a total of 12 complex queries using WHERE, GROUP BY, and JOIN clauses etc. as outlined in the project description. Each team member contributed four queries, providing valuable insights and information for the organization's current and future needs.
 
 ###### The development of these queries was discussed during a team meeting where all members shared their ideas and research from lecture slides. During the meeting, we decided to work on a few queries together and then evenly distribute the remaining queries among team members for further development and upload to our GitHub repository.
 
 ###### Here are two examples of the queries we created:
 
-###### This query retrieves the company name and address of the supplier providing the medication with the earliest expiration date.
+###### This query retrieves the date and time of each transaction by the staff name and the action.
 ```
-SELECT s.Company_name, s.Address
-FROM Supplier s
-JOIN Medication m ON s.Supplier_ID = m.Supplier_ID
-WHERE m.Expiration_date = (SELECT MIN(Expiration_date) FROM Medication)
-LIMIT 1;
+select al.transaction_id, al.date_time, al.action, s.Name as Staff_Name
+from activity_log al
+inner join Staff s on al.user_id = s.Staff_ID
+where al.date_time >= date_sub(now(), interval 6 month)
+order by al.date_time asc;
 ```
 
-###### This query retrieves the names and email addresses of the staff members who were involved in processing purchases on a specific date (in this case, 2023-03-15).
+###### This query retrieves the names and email addresses of the staff members who were involved in processing purchases on a specific date.
 ```
-SELECT DISTINCT s.Name, s.Email
-FROM Staff s
-JOIN Purchase p ON s.Staff_ID = p.Staff_ID
-WHERE p.Date_Purchased = '2023-03-15';
+select distinct s.Name, s.Email
+from Staff s
+join Purchase p on s.Staff_ID = p.Staff_ID
+where p.Date_Purchased = '2023-04-15';
 ```
 ###### To run the queries, users must have access to MySQL Workbench or a compatible database management tool. The SQL queries provided can be executed to retrieve relevant information as needed.
 
