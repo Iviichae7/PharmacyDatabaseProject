@@ -1,74 +1,75 @@
-CREATE DATABASE Pharmacy_DB;
+create database pharmacy_db;
 
-USE Pharmacy_DB;
+use pharmacy_db;
 
--- Create a table "Supplier".
-CREATE TABLE Supplier (
-  Supplier_ID INT AUTO_INCREMENT PRIMARY KEY,
-  Company_name VARCHAR(50) NOT NULL,
-  Address VARCHAR(100) NOT NULL,
-  Contact_number VARCHAR(20) NOT NULL,
-  Email VARCHAR(50) NOT NULL,
-  Location VARCHAR(50) NOT NULL
+-- create a table "Supplier".
+create table supplier (
+supplier_id int auto_increment primary key,
+company_name varchar(50) not null,
+address varchar(100) not null,
+contact_number varchar(20) not null,
+email varchar(50) not null,
+location varchar(50) not null
 );
 
--- Create a table "Medication".
-CREATE TABLE Medication (
-  Medication_ID INT AUTO_INCREMENT PRIMARY KEY, 
-  Name VARCHAR(25) NOT NULL,
-  Description VARCHAR(100) NOT NULL,
-  Expiration_date DATE NOT NULL, 
-  Supplier_ID INT NOT NULL,
-  FOREIGN KEY (Supplier_ID) REFERENCES Supplier(Supplier_ID)
+-- create a table "Medication".
+create table medication (
+medication_id int auto_increment primary key,
+name varchar(25) not null,
+description varchar(100) not null,
+expiration_date date not null,
+supplier_id int not null,
+foreign key (supplier_id) references supplier(supplier_id)
 );
 
--- Create a table "Customer".
-CREATE TABLE Customer (
-  Customer_ID INT AUTO_INCREMENT PRIMARY KEY,
-  Name VARCHAR(45) NOT NULL,
-  Address VARCHAR(45) NOT NULL,
-  Phone_number VARCHAR(45) NOT NULL,
-  Email VARCHAR(45) NOT NULL
+-- create a table "Customer".
+create table customer (
+customer_id int auto_increment primary key,
+name varchar(45) not null,
+address varchar(45) not null,
+phone_number varchar(45) not null,
+email varchar(45) not null
 );
 
--- Create a table "Staff".
-CREATE TABLE Staff (
-  Staff_ID INT AUTO_INCREMENT PRIMARY KEY,
-  Name VARCHAR(50) NOT NULL,
-  Job_Title VARCHAR(50),
-  Email VARCHAR(100) NOT NULL
+-- create a table "Staff".
+create table staff (
+staff_id int auto_increment primary key,
+name varchar(50) not null,
+job_title varchar(50),
+email varchar(100) not null
 );
 
--- Create a table "Prescription".
-CREATE TABLE Prescription (
-    Prescription_ID INT AUTO_INCREMENT PRIMARY KEY,
-    Medication_ID INT,
-    Issued_Doctor VARCHAR(255),
-    Issued_Date DATE,
-    Customer_ID INT,
-    FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID),
-    FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID)
+-- create a table "Prescription".
+create table prescription (
+prescription_id int auto_increment primary key,
+medication_id int,
+issued_doctor varchar(255),
+issued_date date,
+customer_id int,
+foreign key (medication_id) references medication(medication_id),
+foreign key (customer_id) references customer(customer_id)
 );
 
--- Create a table "Purchase".
-CREATE TABLE Purchase (
-  Purchase_ID INT AUTO_INCREMENT PRIMARY KEY,
-  Customer_ID INT NOT NULL,
-  Medication_ID INT NOT NULL,
-  Staff_ID INT NOT NULL,
-  Date_Purchased DATE NOT NULL,
-  Quantity INT NOT NULL,
-  Price DECIMAL(10,2) NOT NULL,
-  FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID),
-  FOREIGN KEY (Medication_ID) REFERENCES Medication(Medication_ID),
-  FOREIGN KEY (Staff_ID) REFERENCES Staff(Staff_ID)
+-- create a table "Purchase".
+create table purchase (
+purchase_id int auto_increment primary key,
+customer_id int not null,
+medication_id int not null,
+staff_id int not null,
+date_purchased date not null,
+quantity int not null,
+price decimal(10,2) not null,
+foreign key (customer_id) references customer(customer_id),
+foreign key (medication_id) references medication(medication_id),
+foreign key (staff_id) references staff(staff_id)
 );
 
--- Create a table "Activity_Log".
-CREATE TABLE Activity_Log (
-  Transaction_ID INT AUTO_INCREMENT PRIMARY KEY,
-  User_ID INT NOT NULL,
-  Date_Time DATETIME NOT NULL,
-  Action VARCHAR(50) NOT NULL,
-  FOREIGN KEY (User_ID) REFERENCES Staff(Staff_ID)
+-- create a table "Activity_Log".
+create table activity_log (
+transaction_id int auto_increment primary key,
+user_id int not null,
+date_time datetime not null,
+action varchar(50) not null,
+foreign key (user_id) references staff(staff_id)
 );
+
