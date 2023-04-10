@@ -23,12 +23,12 @@ join Medication m on p.Medication_ID = m.Medication_ID
 where m.Name = 'Metformin';
 
 -- This query retrieves customer information and purchase dates
--- for customers who have purchased Ibuprofen within the past month.
+-- for customers who have purchased Ibuprofen within the past year.
 select c.Name, c.Address, c.Phone_number, c.Email, p.Date_Purchased
 from Customer c
 join Purchase p on c.Customer_ID = p.Customer_ID
 join Medication m on p.Medication_ID = m.Medication_ID
-where m.Name = 'Ibuprofen' and p.Date_Purchased >= date_sub(now(), interval 1 month);
+where m.Name = 'Ibuprofen' and p.Date_Purchased >= date_sub(now(), interval 1 year);
 
 -- This query retrieves the names of doctors and the total number
 -- of prescriptions they issued, sorted by the highest count first.
