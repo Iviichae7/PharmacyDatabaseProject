@@ -3,19 +3,19 @@ use pharmacy_db;
 -- -------------------------------populate supplier---------------------------------- --
 
 insert into supplier (company_name, address, contact_number, email, location) values
-('Bayer Corporation', '100 Bayer Blvd, Whippany, NJ, USA', '555-1234', 'contact@bayer.com', 'Whippany, NJ');
+('Bayer Corporation', '100 Bayer Blvd, Whippany, Paris, FRA', '535-1437', 'contact@bayer.com', 'Paris, FRA');
 set @supplier1 = last_insert_id();
 insert into supplier (company_name, address, contact_number, email, location) values
-('AstraZeneca', '1 Francis Crick Avenue, Cambridge, United Kingdom', '555-5678', 'contact@astrazeneca.com', 'Cambridge, UK');
+('AstraZeneca', '1 Francis Crick Avenue, Cambridge, United Kingdom', '575-5173', 'contact@astrazeneca.com', 'Cambridge, UK');
 set @supplier2 = last_insert_id();
 insert into supplier (company_name, address, contact_number, email, location) values
 ('Pfizer', '235 E 42nd St, New York, NY, USA', '555-2468', 'contact@pfizer.com', 'New York, NY');
 set @supplier3 = last_insert_id();
 insert into supplier (company_name, address, contact_number, email, location) values
-('Johnson & Johnson', '1 Johnson & Johnson Plaza, New Brunswick, NJ, USA', '555-3456', 'contact@jnj.com', 'New Brunswick, NJ');
+('Johnson & Johnson', '1 Johnson & Johnson Plaza, New Brunswick, LA, USA', '535-6416', 'contact@jnj.com', 'Los Angeles, LA');
 set @supplier4 = last_insert_id();
 insert into supplier (company_name, address, contact_number, email, location) values
-('Merck & Co.', '2000 Galloping Hill Rd, Kenilworth, NJ, USA', '555-7890', 'contact@merck.com', 'Kenilworth, NJ');
+('Merck & Co.', '2000 Galloping Hill Rd, Kenilworth, D.C, USA', '525-3840', 'contact@merck.com', 'Washington, D.C');
 set @supplier5 = last_insert_id();
 
 -- -------------------------------Populate Customer----------------------------------- --
@@ -222,19 +222,19 @@ set @medication15 = last_insert_id();
 -- -------------------------------Populate Staff-------------------------------------- --
 
 insert into staff (name, job_title, email) values
-('alice johnson', 'pharmacist', 'alice.johnson@pharmacy.com');
+('Alice Johnson', 'Pharmacist', 'alice.johnson@MCJpharmacy.com');
 set @staff1 = last_insert_id();
 insert into staff (name, job_title, email) values
-('bob smith', 'pharmacy technician', 'bob.smith@pharmacy.com');
+('Bob Smith', 'Pharmacy Technician', 'bob.smith@MCJpharmacy.com');
 set @staff2 = last_insert_id();
 insert into staff (name, job_title, email) values
-('mike kerry', 'cashier', 'mike.kerry@pharmacy.com');
+('Mike Kerry', 'Cashier', 'mike.kerry@MCJpharmacy.com');
 set @staff3 = last_insert_id();
 insert into staff (name, job_title, email) values
-('denise taylor', 'cashier', 'denise.taylor@pharmacy.com');
+('Denise Taylor', 'Cashier', 'denise.taylor@MCJpharmacy.com');
 set @staff4 = last_insert_id();
 insert into staff (name, job_title, email) values
-('charlie white', 'cashier', 'cahrlie.white@pharmacy.com');
+('Charlie White', 'Cashier', 'cahrlie.white@pharmacy.com');
 set @staff5 = last_insert_id();
 
 -- -----------------------------------Populate Prescription------------------------------- --
